@@ -1,0 +1,13 @@
+<div (cdkObserveContent)="refreshSlides()" class="container" #containerRef>
+  <ng-content></ng-content>
+</div>
+
+<button (click)="prev()">
+  Left
+</button>
+
+<div class="hide"></div>
+
+<button (click)="next()">
+  Right
+</button>
