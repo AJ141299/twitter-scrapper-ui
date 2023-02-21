@@ -22,6 +22,7 @@ export class AppComponent {
       .get('http://localhost:5083/posts/get')
       .subscribe((response: any) => {
         this.codes = response;
+        console.log(this.codes);
         document.head.appendChild(twitterScript);
       });
   }

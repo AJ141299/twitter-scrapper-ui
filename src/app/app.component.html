@@ -1,5 +1,8 @@
 <div class="container">
-  <carousel>
+  <div *ngIf="codes.length == 0">
+    Loading...
+  </div>
+  <carousel *ngIf="codes.length > 0">
     <div [innerHtml]="code" *ngFor="let code of codes"></div>
   </carousel>
 </div>

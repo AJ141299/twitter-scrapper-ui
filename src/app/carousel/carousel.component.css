@@ -1,8 +1,17 @@
 .container {
   display: flex;
+  position: relative;
+  width: min-content;
 }
 
-.hide {
-  visibility: none;
+.prev-btn {
   position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.next-btn {
+  position: absolute;
+  top: 50%;
+  right: 30%;
 }
